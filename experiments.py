@@ -84,7 +84,7 @@ def main():
     parser.add_argument('--n_sources', '-s', type=int, default=1000)
     parser.add_argument('--n_dataitems', '-o', type=int, default=1000)
     parser.add_argument('--n_distinct', '-d', type=int, default=20)
-    parser.add_argument('--index', '-x', type=int, default=None)
+    parser.add_argument('--index', '-x', type=int, default=None, choices=range(7))
     parser.add_argument('--save_interval', '-i', type=int, default=20)
 
     args = vars(parser.parse_args())
@@ -106,15 +106,17 @@ def main():
     ]
 
     if args['index'] is None:
+        filename = args['filename']
         distribs = {'coverage': distribs_list, 'truth': distribs_list, 
                     'distinct': distribs_list, 'spread': distribs_list}
     else:
         distribs = {'coverage': distribs_list, 'truth': distribs_list, 
                     'distinct': distribs_list, 'spread': [distribs_list[args['index']]]}
+        filename = args['filename'] + f"-part{args['index']}"
 
     algorithms = [Majority(), TruthFinder(base_trust=0.001), TwoEstimates(base_trust=0.001), ThreeEstimates(base_trust=0.001)]
 
-    run_experiments(args['filename'], params, distribs, algorithms, args['save_interval'])
+    run_experiments(filename, params, distribs, algorithms, args['save_interval'])
 
 if __name__ == "__main__":
     main()
