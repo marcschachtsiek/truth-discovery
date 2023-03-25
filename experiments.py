@@ -74,7 +74,7 @@ def run_experiments(filename, params, distribs, algorithms, save_interval):
                 json.dump(records, f, indent = 4)
 
         iteration += 1
-        if iteration == 3: return
+        #if iteration == 3: return
 
 def main():
     
@@ -114,7 +114,8 @@ def main():
                     'distinct': distribs_list, 'spread': [distribs_list[args['index']]]}
         filename = args['filename'] + f"-part{args['index']}"
 
-    algorithms = [Majority(), TruthFinder(base_trust=0.001), TwoEstimates(base_trust=0.001), ThreeEstimates(base_trust=0.001)]
+    algorithms = [Majority(), TruthFinder(base_trust=0.001), 
+                  TwoEstimates(base_trust=0.001), ThreeEstimates(base_trust=0.001)]
 
     run_experiments(filename, params, distribs, algorithms, args['save_interval'])
 
