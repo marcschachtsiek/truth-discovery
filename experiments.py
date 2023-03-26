@@ -92,8 +92,8 @@ def main():
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--filename', '-f', type=str, default='todo')
-    parser.add_argument('--n_sources', '-s', type=int, default=1000)
-    parser.add_argument('--n_dataitems', '-o', type=int, default=1000)
+    parser.add_argument('--n_sources', '-s', type=int, default=100)
+    parser.add_argument('--n_dataitems', '-o', type=int, default=500)
     parser.add_argument('--n_distinct', '-d', type=int, default=20)
     parser.add_argument('--index', '-x', type=int, default=None, choices=range(7))
     parser.add_argument('--save_interval', '-i', type=int, default=20)
@@ -109,13 +109,18 @@ def main():
     }
 
     distribs_list = [
-        TruncPareto(), 
-        TruncExponential(1), 
-        TruncExponential(1/2), 
-        Uniform(0, 1), 
-        TruncPareto(flipped=True), 
-        TruncExponential(1, flipped=True), 
-        TruncExponential(1/2, flipped=True)
+        #TruncPareto(),
+        #TruncExponential(1),
+        #TruncExponential(1/2),
+        #Uniform(0, 1),
+        #TruncPareto(flipped=True),
+        #TruncExponential(1, flipped=True),
+        #TruncExponential(1/2, flipped=True)
+        TruncPareto(alpha=8.8, flipped=True),
+        TruncExponential(4, flipped=True),
+        Uniform(0, 1),
+        TruncExponential(4),
+        TruncPareto(alpha=8.8),
     ]
 
     if args['index'] is None:
