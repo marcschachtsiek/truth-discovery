@@ -21,7 +21,7 @@ from dataset.distribution import *
 def get_distributions(coverage, truth, distinct, spread):
     return list(product(coverage, truth, distinct, spread))
 
-def run_experiments(filename, params, distribs, algorithms, save_interval):
+def run_experiments(filename, params, distribs, algorithms, save_interval, start_index, stop_index):
     iteration = 0
     
     filename = os.path.join("results", filename + ".json")
@@ -40,6 +40,11 @@ def run_experiments(filename, params, distribs, algorithms, save_interval):
     #options = list(product(get_parameters(**params), get_distributions(**distribs)))
     for distributions in (pbar := tqdm(get_distributions(**distribs))):
 
+        if iteration < start_index: 
+            pbar.set_postfix_str("Skipping")
+            iteration += 1
+            continue
+
         pbar.set_postfix_str("Dataset")
 
         ds = Dataset(*params.values(), *distributions, verbose=0)
@@ -52,6 +57,7 @@ def run_experiments(filename, params, distribs, algorithms, save_interval):
             'spread_dist': distributions[3]._get_info(),
             'optimal': ds.compare(Optimal().run(claims, ds.truth)),
             'n_claims': len(claims), 
+            'iteration_index': iteration,
             'results': {}
         }
 
@@ -74,7 +80,12 @@ def run_experiments(filename, params, distribs, algorithms, save_interval):
                 json.dump(records, f, indent = 4)
 
         iteration += 1
+        
+        if stop_index is not None and iteration >= stop_index: break
         #if iteration == 3: return
+
+    with open(filename, "w") as f:
+        json.dump(records, f, indent = 4)
 
 def main():
     
@@ -86,6 +97,8 @@ def main():
     parser.add_argument('--n_distinct', '-d', type=int, default=20)
     parser.add_argument('--index', '-x', type=int, default=None, choices=range(7))
     parser.add_argument('--save_interval', '-i', type=int, default=20)
+    parser.add_argument('--start_index', type=int, default=0)
+    parser.add_argument('--stop_index', type=int, default=None)
 
     args = vars(parser.parse_args())
 
@@ -114,10 +127,15 @@ def main():
                     'distinct': distribs_list, 'spread': [distribs_list[args['index']]]}
         filename = args['filename'] + f"-part{args['index']}"
 
+    if args['start_index'] != 0:
+        filename += "_" + str(args['start_index'])
+    if args['stop_index'] is not None:
+        filename += "-" + str(args['start_index'])
+
     algorithms = [Majority(), TruthFinder(base_trust=0.001), 
                   TwoEstimates(base_trust=0.001), ThreeEstimates(base_trust=0.001)]
 
-    run_experiments(filename, params, distribs, algorithms, args['save_interval'])
+    run_experiments(filename, params, distribs, algorithms, args['save_interval'], args['start_index'], args['stop_index'])
 
 if __name__ == "__main__":
     main()
