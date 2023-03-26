@@ -1,0 +1,147 @@
+{
+    "n_sources": 200,
+    "n_dataitems": 200,
+    "n_distinct": 20,
+    "algorithms_info": [
+        {
+            "name": "Majority"
+        },
+        {
+            "name": "TruthFinder",
+            "base_trust": 0.001,
+            "tolerance": 0.001,
+            "dampening_factor": 0.1
+        },
+        {
+            "name": "TwoEstimates",
+            "base_trust": 0.001,
+            "tolerance": 0.001,
+            "lmbda": 0.5
+        },
+        {
+            "name": "ThreeEstimates",
+            "base_trust": 0.001,
+            "tolerance": 0.001,
+            "lmbda": 0.5,
+            "base_error_factor": 0.1
+        }
+    ],
+    "experiments": [
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": true
+            },
+            "optimal": [
+                1.0,
+                200
+            ],
+            "n_claims": 20521,
+            "iteration_index": 341,
+            "results": {
+                "Majority": {
+                    "time": 0.02619212500000001,
+                    "scores": [
+                        0.975,
+                        195
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 0.41457362500000006,
+                    "scores": [
+                        0.98,
+                        196
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 2.0609470420000005,
+                    "scores": [
+                        0.02,
+                        4
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 3.574791,
+                    "scores": [
+                        0.955,
+                        191
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": true
+            },
+            "optimal": [
+                1.0,
+                200
+            ],
+            "n_claims": 23185,
+            "iteration_index": 342,
+            "results": {
+                "Majority": {
+                    "time": 0.02585933300000054,
+                    "scores": [
+                        0.985,
+                        197
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 0.3882325839999998,
+                    "scores": [
+                        0.985,
+                        197
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 2.843219124999999,
+                    "scores": [
+                        0.02,
+                        4
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 11.57845,
+                    "scores": [
+                        0.96,
+                        192
+                    ]
+                }
+            }
+        }
+    ]
+}

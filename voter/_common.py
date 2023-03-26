@@ -21,6 +21,9 @@ def _dict_norm(dictionary, lmbda):
         
     for key in dictionary:
         val = dictionary[key]
+        if val == float('inf'):
+            dictionary[key] = float('inf')
+            continue
         x1 = _normalise(val, min_val, max_val)
         x2 = round(val)
         dictionary[key] = lmbda * x1 + (1 - lmbda) * x2
