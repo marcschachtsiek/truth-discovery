@@ -1,0 +1,4648 @@
+{
+    "n_sources": 200,
+    "n_dataitems": 500,
+    "n_distinct": 5,
+    "algorithms_info": [
+        {
+            "name": "Majority"
+        },
+        {
+            "name": "TruthFinder",
+            "base_trust": 0.001,
+            "tolerance": 0.001,
+            "dampening_factor": 0.1
+        },
+        {
+            "name": "TwoEstimates",
+            "base_trust": 0.001,
+            "tolerance": 0.001,
+            "lmbda": 0.5
+        },
+        {
+            "name": "ThreeEstimates",
+            "base_trust": 0.001,
+            "tolerance": 0.001,
+            "lmbda": 0.5,
+            "base_error_factor": 0.1
+        }
+    ],
+    "experiments": [
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 38103,
+            "results": {
+                "Majority": {
+                    "time": 0.2289309436455369,
+                    "scores": [
+                        0.184,
+                        92
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.521674525924027,
+                    "scores": [
+                        0.182,
+                        91
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.811033014208078,
+                    "scores": [
+                        0.642,
+                        321
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.781787706539035,
+                    "scores": [
+                        0.162,
+                        81
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 32577,
+            "results": {
+                "Majority": {
+                    "time": 0.22845685854554176,
+                    "scores": [
+                        0.208,
+                        104
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.404680922627449,
+                    "scores": [
+                        0.206,
+                        103
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.281701123341918,
+                    "scores": [
+                        0.544,
+                        272
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.174518255516887,
+                    "scores": [
+                        0.184,
+                        92
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 40366,
+            "results": {
+                "Majority": {
+                    "time": 0.2250715121626854,
+                    "scores": [
+                        0.198,
+                        99
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4734778860583901,
+                    "scores": [
+                        0.194,
+                        97
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.623584292829037,
+                    "scores": [
+                        0.594,
+                        297
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.739070350304246,
+                    "scores": [
+                        0.164,
+                        82
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 41235,
+            "results": {
+                "Majority": {
+                    "time": 0.22719440329819918,
+                    "scores": [
+                        0.15,
+                        75
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.494052262045443,
+                    "scores": [
+                        0.152,
+                        76
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 6.127585180103779,
+                    "scores": [
+                        0.592,
+                        296
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 10.471026022918522,
+                    "scores": [
+                        0.11,
+                        55
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 36978,
+            "results": {
+                "Majority": {
+                    "time": 0.22636831924319267,
+                    "scores": [
+                        0.206,
+                        103
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.5837015807628632,
+                    "scores": [
+                        0.214,
+                        107
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 6.213521686382592,
+                    "scores": [
+                        0.39,
+                        195
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 10.882699796929955,
+                    "scores": [
+                        0.148,
+                        74
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 38759,
+            "results": {
+                "Majority": {
+                    "time": 0.22964163590222597,
+                    "scores": [
+                        0.236,
+                        118
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.5490544410422444,
+                    "scores": [
+                        0.23,
+                        115
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 6.1200293358415365,
+                    "scores": [
+                        0.456,
+                        228
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 10.636057848110795,
+                    "scores": [
+                        0.172,
+                        86
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 37259,
+            "results": {
+                "Majority": {
+                    "time": 0.22730753850191832,
+                    "scores": [
+                        0.27,
+                        135
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.5433185016736388,
+                    "scores": [
+                        0.266,
+                        133
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 6.104442102834582,
+                    "scores": [
+                        0.446,
+                        223
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 10.504402249120176,
+                    "scores": [
+                        0.228,
+                        114
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 39796,
+            "results": {
+                "Majority": {
+                    "time": 0.25710069108754396,
+                    "scores": [
+                        0.246,
+                        123
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.462656045332551,
+                    "scores": [
+                        0.246,
+                        123
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.96090935356915,
+                    "scores": [
+                        0.628,
+                        314
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 10.267142793163657,
+                    "scores": [
+                        0.214,
+                        107
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 39810,
+            "results": {
+                "Majority": {
+                    "time": 0.23050682246685028,
+                    "scores": [
+                        0.178,
+                        89
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4775998210534453,
+                    "scores": [
+                        0.184,
+                        92
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.6252729734405875,
+                    "scores": [
+                        0.594,
+                        297
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.866734493523836,
+                    "scores": [
+                        0.14,
+                        70
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 39500,
+            "results": {
+                "Majority": {
+                    "time": 0.2289096899330616,
+                    "scores": [
+                        0.306,
+                        153
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.5014360649511218,
+                    "scores": [
+                        0.306,
+                        153
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.738388633355498,
+                    "scores": [
+                        0.478,
+                        239
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.941889726556838,
+                    "scores": [
+                        0.266,
+                        133
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 38004,
+            "results": {
+                "Majority": {
+                    "time": 0.22852025367319584,
+                    "scores": [
+                        0.162,
+                        81
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.510424898006022,
+                    "scores": [
+                        0.166,
+                        83
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.880720277316868,
+                    "scores": [
+                        0.532,
+                        266
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 10.173797471448779,
+                    "scores": [
+                        0.102,
+                        51
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 38838,
+            "results": {
+                "Majority": {
+                    "time": 0.23024840280413628,
+                    "scores": [
+                        0.402,
+                        201
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.584901905618608,
+                    "scores": [
+                        0.402,
+                        201
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 6.230881006456912,
+                    "scores": [
+                        0.38,
+                        190
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 11.037718128412962,
+                    "scores": [
+                        0.326,
+                        163
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 33297,
+            "results": {
+                "Majority": {
+                    "time": 0.2248273240402341,
+                    "scores": [
+                        0.29,
+                        145
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.530297776684165,
+                    "scores": [
+                        0.296,
+                        148
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.941679283976555,
+                    "scores": [
+                        0.408,
+                        204
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 10.369002159684896,
+                    "scores": [
+                        0.244,
+                        122
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 35302,
+            "results": {
+                "Majority": {
+                    "time": 0.22843280620872974,
+                    "scores": [
+                        0.416,
+                        208
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.5507947709411383,
+                    "scores": [
+                        0.428,
+                        214
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 6.321919232606888,
+                    "scores": [
+                        0.374,
+                        187
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 10.277762881480157,
+                    "scores": [
+                        0.374,
+                        187
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 34935,
+            "results": {
+                "Majority": {
+                    "time": 0.22001805249601603,
+                    "scores": [
+                        0.338,
+                        169
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.3891840931028128,
+                    "scores": [
+                        0.334,
+                        167
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.042659332975745,
+                    "scores": [
+                        0.484,
+                        242
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.226350497454405,
+                    "scores": [
+                        0.306,
+                        153
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 39513,
+            "results": {
+                "Majority": {
+                    "time": 0.22321258950978518,
+                    "scores": [
+                        0.284,
+                        142
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4590149847790599,
+                    "scores": [
+                        0.292,
+                        146
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.435816008597612,
+                    "scores": [
+                        0.48,
+                        240
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.552378541789949,
+                    "scores": [
+                        0.25,
+                        125
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 38599,
+            "results": {
+                "Majority": {
+                    "time": 0.22252702713012695,
+                    "scores": [
+                        0.35,
+                        175
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.5369966235011816,
+                    "scores": [
+                        0.346,
+                        173
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.535569370724261,
+                    "scores": [
+                        0.426,
+                        213
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.504158693365753,
+                    "scores": [
+                        0.31,
+                        155
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 39892,
+            "results": {
+                "Majority": {
+                    "time": 0.2249647630378604,
+                    "scores": [
+                        0.456,
+                        228
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.488423153758049,
+                    "scores": [
+                        0.452,
+                        226
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.750675869174302,
+                    "scores": [
+                        0.362,
+                        181
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.959875480271876,
+                    "scores": [
+                        0.436,
+                        218
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 39046,
+            "results": {
+                "Majority": {
+                    "time": 0.2281375089660287,
+                    "scores": [
+                        0.458,
+                        229
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.5923231542110443,
+                    "scores": [
+                        0.45,
+                        225
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 9.903991553001106,
+                    "scores": [
+                        0.288,
+                        144
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 11.407461248338223,
+                    "scores": [
+                        0.394,
+                        197
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 38089,
+            "results": {
+                "Majority": {
+                    "time": 0.22129167057573795,
+                    "scores": [
+                        0.5,
+                        250
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.5255876071751118,
+                    "scores": [
+                        0.51,
+                        255
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.926063884980977,
+                    "scores": [
+                        0.336,
+                        168
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 10.466478222049773,
+                    "scores": [
+                        0.482,
+                        241
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 36033,
+            "results": {
+                "Majority": {
+                    "time": 0.2278645671904087,
+                    "scores": [
+                        0.564,
+                        282
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.5311304777860641,
+                    "scores": [
+                        0.566,
+                        283
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.825088232755661,
+                    "scores": [
+                        0.38,
+                        190
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.880908308550715,
+                    "scores": [
+                        0.548,
+                        274
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 37233,
+            "results": {
+                "Majority": {
+                    "time": 0.21675617713481188,
+                    "scores": [
+                        0.748,
+                        374
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.3452566880732775,
+                    "scores": [
+                        0.744,
+                        372
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.102415259927511,
+                    "scores": [
+                        0.358,
+                        179
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 31.164636082947254,
+                    "scores": [
+                        0.73,
+                        365
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 36163,
+            "results": {
+                "Majority": {
+                    "time": 0.21754139941185713,
+                    "scores": [
+                        0.85,
+                        425
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4131647795438766,
+                    "scores": [
+                        0.846,
+                        423
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.337635505013168,
+                    "scores": [
+                        0.302,
+                        151
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.442176793701947,
+                    "scores": [
+                        0.854,
+                        427
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 40558,
+            "results": {
+                "Majority": {
+                    "time": 0.2340354286134243,
+                    "scores": [
+                        0.828,
+                        414
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4475157232955098,
+                    "scores": [
+                        0.834,
+                        417
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.451499357819557,
+                    "scores": [
+                        0.26,
+                        130
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.338658506982028,
+                    "scores": [
+                        0.842,
+                        421
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "distinct_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 36148,
+            "results": {
+                "Majority": {
+                    "time": 0.21014902647584677,
+                    "scores": [
+                        0.66,
+                        330
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.400031085126102,
+                    "scores": [
+                        0.672,
+                        336
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.413091883994639,
+                    "scores": [
+                        0.272,
+                        136
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 18.543630610220134,
+                    "scores": [
+                        0.632,
+                        316
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 30925,
+            "results": {
+                "Majority": {
+                    "time": 0.2068242458626628,
+                    "scores": [
+                        0.922,
+                        461
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4768232330679893,
+                    "scores": [
+                        0.924,
+                        462
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.730545370839536,
+                    "scores": [
+                        0.142,
+                        71
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 49.49825827591121,
+                    "scores": [
+                        0.07,
+                        35
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 37016,
+            "results": {
+                "Majority": {
+                    "time": 0.2120740059763193,
+                    "scores": [
+                        0.906,
+                        453
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4538511903956532,
+                    "scores": [
+                        0.91,
+                        455
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.688434446230531,
+                    "scores": [
+                        0.184,
+                        92
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 10.10323482286185,
+                    "scores": [
+                        0.912,
+                        456
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 40751,
+            "results": {
+                "Majority": {
+                    "time": 0.21778645645827055,
+                    "scores": [
+                        0.826,
+                        413
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4669770197942853,
+                    "scores": [
+                        0.828,
+                        414
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.607810682617128,
+                    "scores": [
+                        0.23,
+                        115
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 19.270459098741412,
+                    "scores": [
+                        0.816,
+                        408
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 34837,
+            "results": {
+                "Majority": {
+                    "time": 0.21269497275352478,
+                    "scores": [
+                        0.998,
+                        499
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.348888506181538,
+                    "scores": [
+                        0.998,
+                        499
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.222810509614646,
+                    "scores": [
+                        0.034,
+                        17
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 35.45585872139782,
+                    "scores": [
+                        0.998,
+                        499
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 38108,
+            "results": {
+                "Majority": {
+                    "time": 0.21580118779093027,
+                    "scores": [
+                        0.992,
+                        496
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.3708803988993168,
+                    "scores": [
+                        0.992,
+                        496
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.258989012800157,
+                    "scores": [
+                        0.07,
+                        35
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 98.18422656413168,
+                    "scores": [
+                        0.974,
+                        487
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 34650,
+            "results": {
+                "Majority": {
+                    "time": 0.21175669226795435,
+                    "scores": [
+                        0.976,
+                        488
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.3880508663132787,
+                    "scores": [
+                        0.974,
+                        487
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.241562134586275,
+                    "scores": [
+                        0.134,
+                        67
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 54.24021896999329,
+                    "scores": [
+                        0.97,
+                        485
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 35458,
+            "results": {
+                "Majority": {
+                    "time": 0.20818382874131203,
+                    "scores": [
+                        0.98,
+                        490
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4117605332285166,
+                    "scores": [
+                        0.98,
+                        490
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.381022559478879,
+                    "scores": [
+                        0.108,
+                        54
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 467.51144334487617,
+                    "scores": [
+                        0.022,
+                        11
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 34285,
+            "results": {
+                "Majority": {
+                    "time": 0.20879342034459114,
+                    "scores": [
+                        0.994,
+                        497
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4981211749836802,
+                    "scores": [
+                        0.992,
+                        496
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.859670775942504,
+                    "scores": [
+                        0.042,
+                        21
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 190.724578211084,
+                    "scores": [
+                        0.992,
+                        496
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 37118,
+            "results": {
+                "Majority": {
+                    "time": 0.2161610620096326,
+                    "scores": [
+                        0.996,
+                        498
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4886402385309339,
+                    "scores": [
+                        0.996,
+                        498
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.688785446807742,
+                    "scores": [
+                        0.048,
+                        24
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 168.25420174747705,
+                    "scores": [
+                        0.004,
+                        2
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 38371,
+            "results": {
+                "Majority": {
+                    "time": 0.21856524422764778,
+                    "scores": [
+                        0.974,
+                        487
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4761934410780668,
+                    "scores": [
+                        0.974,
+                        487
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.67234025709331,
+                    "scores": [
+                        0.098,
+                        49
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 39.10531024355441,
+                    "scores": [
+                        0.974,
+                        487
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 39529,
+            "results": {
+                "Majority": {
+                    "time": 0.213156727142632,
+                    "scores": [
+                        0.956,
+                        478
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.352772100828588,
+                    "scores": [
+                        0.954,
+                        477
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.488478682003915,
+                    "scores": [
+                        0.13,
+                        65
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 27.376070416532457,
+                    "scores": [
+                        0.952,
+                        476
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 39629,
+            "results": {
+                "Majority": {
+                    "time": 0.21499941498041153,
+                    "scores": [
+                        0.968,
+                        484
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.3767251148819923,
+                    "scores": [
+                        0.966,
+                        483
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 6.72740317042917,
+                    "scores": [
+                        0.128,
+                        64
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 63.73182445485145,
+                    "scores": [
+                        0.968,
+                        484
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 36147,
+            "results": {
+                "Majority": {
+                    "time": 0.21836854796856642,
+                    "scores": [
+                        0.946,
+                        473
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4337987899780273,
+                    "scores": [
+                        0.944,
+                        472
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.4320236425846815,
+                    "scores": [
+                        0.16,
+                        80
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 37.50345806311816,
+                    "scores": [
+                        0.936,
+                        468
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 39126,
+            "results": {
+                "Majority": {
+                    "time": 0.2274783607572317,
+                    "scores": [
+                        0.914,
+                        457
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4257636554539204,
+                    "scores": [
+                        0.91,
+                        455
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.4858714155852795,
+                    "scores": [
+                        0.158,
+                        79
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 480.06464880425483,
+                    "scores": [
+                        0.896,
+                        448
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 36845,
+            "results": {
+                "Majority": {
+                    "time": 0.21870625857263803,
+                    "scores": [
+                        0.95,
+                        475
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.5630565527826548,
+                    "scores": [
+                        0.946,
+                        473
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 6.041039893403649,
+                    "scores": [
+                        0.168,
+                        84
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 20.961378862150013,
+                    "scores": [
+                        0.944,
+                        472
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 36477,
+            "results": {
+                "Majority": {
+                    "time": 0.21743347123265266,
+                    "scores": [
+                        0.992,
+                        496
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.49246964789927,
+                    "scores": [
+                        0.992,
+                        496
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 6.170594294555485,
+                    "scores": [
+                        0.056,
+                        28
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 59.15922877937555,
+                    "scores": [
+                        0.992,
+                        496
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 39115,
+            "results": {
+                "Majority": {
+                    "time": 0.2221958041191101,
+                    "scores": [
+                        0.954,
+                        477
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.445832989178598,
+                    "scores": [
+                        0.954,
+                        477
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 6.066218269057572,
+                    "scores": [
+                        0.096,
+                        48
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 79.87077070958912,
+                    "scores": [
+                        0.948,
+                        474
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 38016,
+            "results": {
+                "Majority": {
+                    "time": 0.2146784933283925,
+                    "scores": [
+                        0.858,
+                        429
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.3508355123922229,
+                    "scores": [
+                        0.862,
+                        431
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.2832019636407495,
+                    "scores": [
+                        0.218,
+                        109
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 66.487120824866,
+                    "scores": [
+                        0.848,
+                        424
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 40244,
+            "results": {
+                "Majority": {
+                    "time": 0.21429972536861897,
+                    "scores": [
+                        0.982,
+                        491
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.3731201747432351,
+                    "scores": [
+                        0.98,
+                        490
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.582976718433201,
+                    "scores": [
+                        0.134,
+                        67
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 28.048658346757293,
+                    "scores": [
+                        0.966,
+                        483
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 36543,
+            "results": {
+                "Majority": {
+                    "time": 0.20932817459106445,
+                    "scores": [
+                        0.908,
+                        454
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.397104600444436,
+                    "scores": [
+                        0.9,
+                        450
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.332895666360855,
+                    "scores": [
+                        0.24,
+                        120
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 13.856053588911891,
+                    "scores": [
+                        0.094,
+                        47
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 39625,
+            "results": {
+                "Majority": {
+                    "time": 0.21304764691740274,
+                    "scores": [
+                        0.898,
+                        449
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4453551406040788,
+                    "scores": [
+                        0.908,
+                        454
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.887886472977698,
+                    "scores": [
+                        0.25,
+                        125
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 25.30078843422234,
+                    "scores": [
+                        0.102,
+                        51
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 37692,
+            "results": {
+                "Majority": {
+                    "time": 0.21164609119296074,
+                    "scores": [
+                        0.884,
+                        442
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4827518509700894,
+                    "scores": [
+                        0.882,
+                        441
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.823750430718064,
+                    "scores": [
+                        0.156,
+                        78
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 30.035556357353926,
+                    "scores": [
+                        0.608,
+                        304
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 37069,
+            "results": {
+                "Majority": {
+                    "time": 0.21592234633862972,
+                    "scores": [
+                        0.9,
+                        450
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.495486262254417,
+                    "scores": [
+                        0.9,
+                        450
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.781521903350949,
+                    "scores": [
+                        0.15,
+                        75
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 35.237813549116254,
+                    "scores": [
+                        0.886,
+                        443
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 41698,
+            "results": {
+                "Majority": {
+                    "time": 0.21353268157690763,
+                    "scores": [
+                        0.97,
+                        485
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4601375488564372,
+                    "scores": [
+                        0.974,
+                        487
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.6582041550427675,
+                    "scores": [
+                        0.162,
+                        81
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 62.9691344210878,
+                    "scores": [
+                        0.968,
+                        484
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 45052,
+            "results": {
+                "Majority": {
+                    "time": 0.2190666450187564,
+                    "scores": [
+                        0.128,
+                        64
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.381057133898139,
+                    "scores": [
+                        0.132,
+                        66
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.728097497485578,
+                    "scores": [
+                        0.676,
+                        338
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.554413854144514,
+                    "scores": [
+                        0.112,
+                        56
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 42399,
+            "results": {
+                "Majority": {
+                    "time": 0.21606264356523752,
+                    "scores": [
+                        0.222,
+                        111
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4563297713175416,
+                    "scores": [
+                        0.218,
+                        109
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.346446609124541,
+                    "scores": [
+                        0.604,
+                        302
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.500650397501886,
+                    "scores": [
+                        0.174,
+                        87
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 41358,
+            "results": {
+                "Majority": {
+                    "time": 0.2154005542397499,
+                    "scores": [
+                        0.194,
+                        97
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4233427038416266,
+                    "scores": [
+                        0.2,
+                        100
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.845615418627858,
+                    "scores": [
+                        0.582,
+                        291
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.848006664775312,
+                    "scores": [
+                        0.152,
+                        76
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 41069,
+            "results": {
+                "Majority": {
+                    "time": 0.2171253589913249,
+                    "scores": [
+                        0.158,
+                        79
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4415872218087316,
+                    "scores": [
+                        0.16,
+                        80
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.592873179353774,
+                    "scores": [
+                        0.568,
+                        284
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.725220270454884,
+                    "scores": [
+                        0.116,
+                        58
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 43558,
+            "results": {
+                "Majority": {
+                    "time": 0.22365020960569382,
+                    "scores": [
+                        0.26,
+                        130
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.6411755047738552,
+                    "scores": [
+                        0.274,
+                        137
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 6.617198611609638,
+                    "scores": [
+                        0.408,
+                        204
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 11.008828482590616,
+                    "scores": [
+                        0.184,
+                        92
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 41270,
+            "results": {
+                "Majority": {
+                    "time": 0.21810566261410713,
+                    "scores": [
+                        0.334,
+                        167
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4922554148361087,
+                    "scores": [
+                        0.334,
+                        167
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.873749648220837,
+                    "scores": [
+                        0.436,
+                        218
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 10.259317968040705,
+                    "scores": [
+                        0.252,
+                        126
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 44615,
+            "results": {
+                "Majority": {
+                    "time": 0.2168434988707304,
+                    "scores": [
+                        0.184,
+                        92
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.470966742374003,
+                    "scores": [
+                        0.18,
+                        90
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 9.170643661171198,
+                    "scores": [
+                        0.566,
+                        283
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 10.440501159057021,
+                    "scores": [
+                        0.124,
+                        62
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 42243,
+            "results": {
+                "Majority": {
+                    "time": 0.21478542499244213,
+                    "scores": [
+                        0.294,
+                        147
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4574947012588382,
+                    "scores": [
+                        0.298,
+                        149
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.236527285538614,
+                    "scores": [
+                        0.578,
+                        289
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.123003646731377,
+                    "scores": [
+                        0.27,
+                        135
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 41381,
+            "results": {
+                "Majority": {
+                    "time": 0.22478277795016766,
+                    "scores": [
+                        0.388,
+                        194
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4483413463458419,
+                    "scores": [
+                        0.376,
+                        188
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.648631822317839,
+                    "scores": [
+                        0.528,
+                        264
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.304923418909311,
+                    "scores": [
+                        0.366,
+                        183
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 43253,
+            "results": {
+                "Majority": {
+                    "time": 0.2123968657106161,
+                    "scores": [
+                        0.294,
+                        147
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.39169429987669,
+                    "scores": [
+                        0.294,
+                        147
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.402005351148546,
+                    "scores": [
+                        0.494,
+                        247
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.358427848666906,
+                    "scores": [
+                        0.246,
+                        123
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 40383,
+            "results": {
+                "Majority": {
+                    "time": 0.2110908403992653,
+                    "scores": [
+                        0.302,
+                        151
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4029228398576379,
+                    "scores": [
+                        0.302,
+                        151
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.401761302724481,
+                    "scores": [
+                        0.514,
+                        257
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.499179862439632,
+                    "scores": [
+                        0.27,
+                        135
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 41604,
+            "results": {
+                "Majority": {
+                    "time": 0.21235804352909327,
+                    "scores": [
+                        0.428,
+                        214
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.469702234491706,
+                    "scores": [
+                        0.426,
+                        213
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 8.811606761999428,
+                    "scores": [
+                        0.408,
+                        204
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 10.152064338326454,
+                    "scores": [
+                        0.364,
+                        182
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 42937,
+            "results": {
+                "Majority": {
+                    "time": 0.21765564382076263,
+                    "scores": [
+                        0.394,
+                        197
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.5356256645172834,
+                    "scores": [
+                        0.398,
+                        199
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 6.239150622859597,
+                    "scores": [
+                        0.39,
+                        195
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 10.337305514141917,
+                    "scores": [
+                        0.332,
+                        166
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 39326,
+            "results": {
+                "Majority": {
+                    "time": 0.2100882139056921,
+                    "scores": [
+                        0.43,
+                        215
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.427053352817893,
+                    "scores": [
+                        0.434,
+                        217
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.541484314016998,
+                    "scores": [
+                        0.412,
+                        206
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.642563945613801,
+                    "scores": [
+                        0.384,
+                        192
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 42146,
+            "results": {
+                "Majority": {
+                    "time": 0.21401049941778183,
+                    "scores": [
+                        0.154,
+                        77
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.3456037249416113,
+                    "scores": [
+                        0.15,
+                        75
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.493476130068302,
+                    "scores": [
+                        0.57,
+                        285
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.269652854651213,
+                    "scores": [
+                        0.136,
+                        68
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 39231,
+            "results": {
+                "Majority": {
+                    "time": 0.20951552502810955,
+                    "scores": [
+                        0.282,
+                        141
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.3512821206822991,
+                    "scores": [
+                        0.28,
+                        140
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.167249336838722,
+                    "scores": [
+                        0.528,
+                        264
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 8.870005688630044,
+                    "scores": [
+                        0.25,
+                        125
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 43713,
+            "results": {
+                "Majority": {
+                    "time": 0.21250361390411854,
+                    "scores": [
+                        0.398,
+                        199
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.3896221732720733,
+                    "scores": [
+                        0.392,
+                        196
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.759620498865843,
+                    "scores": [
+                        0.454,
+                        227
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.935313105583191,
+                    "scores": [
+                        0.398,
+                        199
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 41974,
+            "results": {
+                "Majority": {
+                    "time": 0.21249076630920172,
+                    "scores": [
+                        0.356,
+                        178
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4173843581229448,
+                    "scores": [
+                        0.358,
+                        179
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.502595444209874,
+                    "scores": [
+                        0.432,
+                        216
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.467093041166663,
+                    "scores": [
+                        0.34,
+                        170
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 41669,
+            "results": {
+                "Majority": {
+                    "time": 0.2108358135446906,
+                    "scores": [
+                        0.6,
+                        300
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4906511651352048,
+                    "scores": [
+                        0.594,
+                        297
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 6.79818523209542,
+                    "scores": [
+                        0.268,
+                        134
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 10.630039365962148,
+                    "scores": [
+                        0.572,
+                        286
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 44033,
+            "results": {
+                "Majority": {
+                    "time": 0.21623454242944717,
+                    "scores": [
+                        0.502,
+                        251
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4531755149364471,
+                    "scores": [
+                        0.49,
+                        245
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 8.569904423318803,
+                    "scores": [
+                        0.408,
+                        204
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.97052004095167,
+                    "scores": [
+                        0.47,
+                        235
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 43127,
+            "results": {
+                "Majority": {
+                    "time": 0.21491622366011143,
+                    "scores": [
+                        0.55,
+                        275
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4317535646259785,
+                    "scores": [
+                        0.55,
+                        275
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 6.106198159977794,
+                    "scores": [
+                        0.378,
+                        189
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 10.255076221190393,
+                    "scores": [
+                        0.53,
+                        265
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 42237,
+            "results": {
+                "Majority": {
+                    "time": 0.2130190609022975,
+                    "scores": [
+                        0.394,
+                        197
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.3473549485206604,
+                    "scores": [
+                        0.384,
+                        192
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.245525669306517,
+                    "scores": [
+                        0.484,
+                        242
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 8.938002044335008,
+                    "scores": [
+                        0.382,
+                        191
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 40595,
+            "results": {
+                "Majority": {
+                    "time": 0.21277126669883728,
+                    "scores": [
+                        0.468,
+                        234
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.3622666243463755,
+                    "scores": [
+                        0.462,
+                        231
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.169812550768256,
+                    "scores": [
+                        0.348,
+                        174
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 8.962601074948907,
+                    "scores": [
+                        0.466,
+                        233
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 41431,
+            "results": {
+                "Majority": {
+                    "time": 0.22075412143021822,
+                    "scores": [
+                        0.546,
+                        273
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4135694866999984,
+                    "scores": [
+                        0.554,
+                        277
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.500918100588024,
+                    "scores": [
+                        0.418,
+                        209
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.47526032011956,
+                    "scores": [
+                        0.544,
+                        272
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "distinct_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 42103,
+            "results": {
+                "Majority": {
+                    "time": 0.21844629012048244,
+                    "scores": [
+                        0.816,
+                        408
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4380555571988225,
+                    "scores": [
+                        0.818,
+                        409
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 6.05825724825263,
+                    "scores": [
+                        0.276,
+                        138
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 10.502974832430482,
+                    "scores": [
+                        0.822,
+                        411
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 44697,
+            "results": {
+                "Majority": {
+                    "time": 0.22404057532548904,
+                    "scores": [
+                        0.892,
+                        446
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.5766065893694758,
+                    "scores": [
+                        0.898,
+                        449
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 6.274791933596134,
+                    "scores": [
+                        0.242,
+                        121
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 31.959057142958045,
+                    "scores": [
+                        0.89,
+                        445
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 42253,
+            "results": {
+                "Majority": {
+                    "time": 0.22310191579163074,
+                    "scores": [
+                        0.826,
+                        413
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.545834869146347,
+                    "scores": [
+                        0.824,
+                        412
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 6.390008334070444,
+                    "scores": [
+                        0.218,
+                        109
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 10.632418709807098,
+                    "scores": [
+                        0.832,
+                        416
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": true
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 39976,
+            "results": {
+                "Majority": {
+                    "time": 0.21303863730281591,
+                    "scores": [
+                        0.506,
+                        253
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4411859195679426,
+                    "scores": [
+                        0.516,
+                        258
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.78955967631191,
+                    "scores": [
+                        0.342,
+                        171
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 10.375277980230749,
+                    "scores": [
+                        0.492,
+                        246
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 41246,
+            "results": {
+                "Majority": {
+                    "time": 0.2292507430538535,
+                    "scores": [
+                        1.0,
+                        500
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4207794489338994,
+                    "scores": [
+                        1.0,
+                        500
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.452223000116646,
+                    "scores": [
+                        0.032,
+                        16
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.40477646049112,
+                    "scores": [
+                        1.0,
+                        500
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 43873,
+            "results": {
+                "Majority": {
+                    "time": 0.21838819980621338,
+                    "scores": [
+                        0.996,
+                        498
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4110449934378266,
+                    "scores": [
+                        0.996,
+                        498
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.441872867755592,
+                    "scores": [
+                        0.024,
+                        12
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 56.3986953869462,
+                    "scores": [
+                        0.996,
+                        498
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "TruncExponential",
+                "lmbda": 0.5,
+                "flipped": false
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 38174,
+            "results": {
+                "Majority": {
+                    "time": 0.21372896060347557,
+                    "scores": [
+                        0.966,
+                        483
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.3982900800183415,
+                    "scores": [
+                        0.962,
+                        481
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.288616263307631,
+                    "scores": [
+                        0.08,
+                        40
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 31.775749533437192,
+                    "scores": [
+                        0.03,
+                        15
+                    ]
+                }
+            }
+        },
+        {
+            "coverage_dist": {
+                "name": "TruncExponential",
+                "lmbda": 1,
+                "flipped": false
+            },
+            "truth_dist": {
+                "name": "TruncPareto",
+                "alpha": 1.1609640474436813,
+                "flipped": true
+            },
+            "distinct_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "spread_dist": {
+                "name": "Uniform",
+                "low": 0,
+                "high": 1
+            },
+            "optimal": [
+                1.0,
+                500
+            ],
+            "n_claims": 38785,
+            "results": {
+                "Majority": {
+                    "time": 0.2208435507491231,
+                    "scores": [
+                        1.0,
+                        500
+                    ]
+                },
+                "TruthFinder": {
+                    "time": 1.4215416489169002,
+                    "scores": [
+                        1.0,
+                        500
+                    ]
+                },
+                "TwoEstimates": {
+                    "time": 5.504065102897584,
+                    "scores": [
+                        0.024,
+                        12
+                    ]
+                },
+                "ThreeEstimates": {
+                    "time": 9.596989622339606,
+                    "scores": [
+                        1.0,
+                        500
+                    ]
+                }
+            }
+        }
+    ]
+}
