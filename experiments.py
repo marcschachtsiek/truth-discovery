@@ -95,7 +95,7 @@ def main():
     parser.add_argument('--n_sources', '-s', type=int, default=100)
     parser.add_argument('--n_dataitems', '-o', type=int, default=500)
     parser.add_argument('--n_distinct', '-d', type=int, default=20)
-    parser.add_argument('--index', '-x', type=int, default=None, choices=range(7))
+    parser.add_argument('--index', '-x', type=int, default=None, choices=range(5))
     parser.add_argument('--save_interval', '-i', type=int, default=20)
     parser.add_argument('--start_index', type=int, default=0)
     parser.add_argument('--stop_index', type=int, default=None)
@@ -135,7 +135,7 @@ def main():
     if args['start_index'] != 0:
         filename += "_" + str(args['start_index'])
     if args['stop_index'] is not None:
-        filename += "-" + str(args['start_index'])
+        filename += "-" + str(args['stop_index'] - 1)
 
     algorithms = [Majority(), TruthFinder(base_trust=0.001), 
                   TwoEstimates(base_trust=0.001), ThreeEstimates(base_trust=0.001)]
